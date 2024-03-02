@@ -13,25 +13,20 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
+	var can_move_players = true
+	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var direction = (players[0].transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		
 	for player in players:
 		if not player.is_on_floor():
 			player.velocity.y -= gravity * delta
-		
-		var can_move_players = true
-		
-		var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-		var direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 		for raycast in raycasters:
 			raycast.rotation = Vector3(0, -player.rotation.y, 0)
 			raycast.target_position = direction
 			raycast.force_raycast_update()
 			if raycast.is_colliding():
-				print("colliding")
 				can_move_players = false
-			else:
-				print(" not colliding")
-		
 		
 		if direction and can_move_players:
 			player.velocity.x = direction.x * speed
