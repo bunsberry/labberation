@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkw0ot2wxsqm"]
+
+[ext_resource type="ArrayMesh" uid="uid://bm0l54mu052g0" path="res://assets/level1A.obj" id="2_o4b4k"]
+[ext_resource type="Script" path="res://scripts/PlayerManager.gd" id="3_gwse8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_58yyc"]
+sky_top_color = Color(1, 1, 1, 1)
+sky_horizon_color = Color(0.8, 0.79225, 0.78325, 1)
+ground_horizon_color = Color(0.8, 0.79225, 0.78325, 1)
+
+[sub_resource type="Sky" id="Sky_s3p1w"]
+sky_material = SubResource("ProceduralSkyMaterial_58yyc")
+
+[sub_resource type="Environment" id="Environment_a11kr"]
+background_mode = 2
+sky = SubResource("Sky_s3p1w")
+tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_71umu"]
+size = Vector3(97.5254, 2.13727, 82.3787)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kb2i0"]
+
+[node name="TestMultiple" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a11kr")
+
+[node name="WorldSpace" type="Node3D" parent="."]
+
+[node name="Level A" type="StaticBody3D" parent="WorldSpace"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldSpace/Level A"]
+mesh = ExtResource("2_o4b4k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldSpace/Level A"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0586395, -0.014801, -0.1698)
+shape = SubResource("BoxShape3D_71umu")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubViewport" type="SubViewport" parent="Control/HBoxContainer/SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="PlayerA" type="CharacterBody3D" parent="Control/HBoxContainer/SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24611, 3.39544, -3.71966)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control/HBoxContainer/SubViewportContainer/SubViewport/PlayerA"]
+shape = SubResource("CapsuleShape3D_kb2i0")
+
+[node name="CameraPivot" type="Node3D" parent="Control/HBoxContainer/SubViewportContainer/SubViewport/PlayerA"]
+
+[node name="Camera3D" type="Camera3D" parent="Control/HBoxContainer/SubViewportContainer/SubViewport/PlayerA/CameraPivot"]
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubViewport" type="SubViewport" parent="Control/HBoxContainer/SubViewportContainer2"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="PlayerB" type="CharacterBody3D" parent="Control/HBoxContainer/SubViewportContainer2/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9452, 3.39544, -3.71966)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control/HBoxContainer/SubViewportContainer2/SubViewport/PlayerB"]
+shape = SubResource("CapsuleShape3D_kb2i0")
+
+[node name="CameraPivot" type="Node3D" parent="Control/HBoxContainer/SubViewportContainer2/SubViewport/PlayerB"]
+
+[node name="Camera3D" type="Camera3D" parent="Control/HBoxContainer/SubViewportContainer2/SubViewport/PlayerB/CameraPivot"]
+
+[node name="PlayerManager" type="Node" parent="." node_paths=PackedStringArray("players")]
+script = ExtResource("3_gwse8")
+players = [NodePath("../Control/HBoxContainer/SubViewportContainer/SubViewport/PlayerA"), NodePath("../Control/HBoxContainer/SubViewportContainer2/SubViewport/PlayerB")]
