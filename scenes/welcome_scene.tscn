@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://druq5qeokfa28"]
+
+[ext_resource type="Script" path="res://scripts/global_toggles.gd" id="1_1g6xf"]
+[ext_resource type="Script" path="res://scripts/level_finish.gd" id="2_vsfw3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2qln"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="WelcomeScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fullscreen Toggle" type="Node" parent="."]
+script = ExtResource("1_1g6xf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2qln")
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_vsfw3")
+labels = Array[String](["Welcome to the labyrinth"])
+scene_file = "res://scenes/Level 1.tscn"
+
+[node name="Timer" type="Timer" parent="Label"]
+process_callback = 0
+wait_time = 4.0
+autostart = true
+
+[connection signal="timeout" from="Label/Timer" to="Label" method="_on_timer_timeout"]

@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=3 uid="uid://d4idn6egch0i2"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_3aqn4"]
+[ext_resource type="Script" path="res://scripts/global_toggles.gd" id="2_a1c0e"]
+
+[sub_resource type="Theme" id="Theme_n5a7g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q20xb"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_1583w"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_5s82a"]
+line_spacing = 0.0
+font = SubResource("SystemFont_1583w")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+shadow_size = 0
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3aqn4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_n5a7g")
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_q20xb")
+text = "   D 
+   U  
+   A
+   L
+   I
+   T
+   Y"
+label_settings = SubResource("LabelSettings_5s82a")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Spacer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Spacer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="Start" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Start"
+flat = true
+alignment = 2
+
+[node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+flat = true
+alignment = 2
+
+[node name="F" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Press F to toggle fullscreen"
+
+[node name="Spacer2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="Spacer2" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+
+[node name="global_toggles" type="Node" parent="."]
+script = ExtResource("2_a1c0e")
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
