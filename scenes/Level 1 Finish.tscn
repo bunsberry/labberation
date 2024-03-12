@@ -23,16 +23,15 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_4tory")
-text = "..."
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("1_m5e32")
-labels = Array[String](["", "But I don't want you to win", "I want you to play with me", "Here, I'll make it harder"])
+labels = Array[String](["Alright I don't think you will understand what I'm trying to say without this information at least", "My friend was always a quiet kid. I was not around for most of the time. But you know who was?", "His dog. A jack russell named Jackie. She made him stop feeling incomplete for years", "And then this guy spread some kind of poison on the street. A poison for dogs", "3 resuscitations didn't help", "When I met him after that happened he told me about this. The only question he had is \"Why?\"", "Bear with me for a little longer. I'll make it a bit harder"])
 scene_file = "res://scenes/Level 1.tscn"
 
 [node name="Timer" type="Timer" parent="Label"]
 process_callback = 0
-wait_time = 4.0
+wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="Label/Timer" to="Label" method="_on_timer_timeout"]

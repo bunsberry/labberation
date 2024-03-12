@@ -345,19 +345,6 @@ light_bake_mode = 1
 shadow_enabled = true
 omni_range = 7.47109
 
-[node name="Yellow12" type="OmniLight3D" parent="WorldSpace/Lights/Colors A"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.2067, 3.88671, -35.3982)
-light_color = Color(0, 0.223529, 0.74902, 1)
-light_energy = 16.0
-light_indirect_energy = 0.69
-light_volumetric_fog_energy = 0.0
-light_size = 0.364
-light_negative = true
-light_specular = 4.931
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 7.47109
-
 [node name="Yellow10" type="OmniLight3D" parent="WorldSpace/Lights/Colors A"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.2067, 3.88671, 35.6018)
 light_color = Color(0, 0.223529, 0.74902, 1)
@@ -373,19 +360,6 @@ omni_range = 7.47109
 
 [node name="Yellow15" type="OmniLight3D" parent="WorldSpace/Lights/Colors A"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.2067, 3.88671, 35.6018)
-light_color = Color(0, 0.223529, 0.74902, 1)
-light_energy = 16.0
-light_indirect_energy = 0.69
-light_volumetric_fog_energy = 0.0
-light_size = 0.364
-light_negative = true
-light_specular = 4.931
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 7.47109
-
-[node name="Yellow5" type="OmniLight3D" parent="WorldSpace/Lights/Colors A"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2067, 3.88671, 12.6018)
 light_color = Color(0, 0.223529, 0.74902, 1)
 light_energy = 16.0
 light_indirect_energy = 0.69
@@ -799,19 +773,6 @@ light_bake_mode = 1
 shadow_enabled = true
 omni_range = 7.47109
 
-[node name="Yellow12" type="OmniLight3D" parent="WorldSpace/Lights/Colors B"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.2067, 3.88671, -35.3982)
-light_color = Color(0, 0.223529, 0.74902, 1)
-light_energy = 16.0
-light_indirect_energy = 0.69
-light_volumetric_fog_energy = 0.0
-light_size = 0.364
-light_negative = true
-light_specular = 4.931
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 7.47109
-
 [node name="Yellow10" type="OmniLight3D" parent="WorldSpace/Lights/Colors B"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.2067, 3.88671, 35.6018)
 light_color = Color(0, 0.223529, 0.74902, 1)
@@ -838,34 +799,8 @@ light_bake_mode = 1
 shadow_enabled = true
 omni_range = 7.47109
 
-[node name="Yellow5" type="OmniLight3D" parent="WorldSpace/Lights/Colors B"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2067, 3.88671, 12.6018)
-light_color = Color(0, 0.223529, 0.74902, 1)
-light_energy = 16.0
-light_indirect_energy = 0.69
-light_volumetric_fog_energy = 0.0
-light_size = 0.364
-light_negative = true
-light_specular = 4.931
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 7.47109
-
 [node name="Yellow6" type="OmniLight3D" parent="WorldSpace/Lights/Colors B"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2067, 3.88671, -4.39821)
-light_color = Color(0, 0.223529, 0.74902, 1)
-light_energy = 16.0
-light_indirect_energy = 0.69
-light_volumetric_fog_energy = 0.0
-light_size = 0.364
-light_negative = true
-light_specular = 4.931
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 7.47109
-
-[node name="Yellow7" type="OmniLight3D" parent="WorldSpace/Lights/Colors B"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.2067, 3.88671, -35.3982)
 light_color = Color(0, 0.223529, 0.74902, 1)
 light_energy = 16.0
 light_indirect_energy = 0.69
@@ -1213,7 +1148,7 @@ text = "Let me tell you a story while
 you are here. I am sorry if it is
 too disturbing or sad. I don't
 want to make your day worse.
-But I need to get it off my chest"
+It's a story of a friend of mine"
 outline_size = 0
 
 [node name="TextBox17" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
@@ -1309,6 +1244,33 @@ around searching for one right
 answer"
 outline_size = 0
 
+[node name="TextBox29" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
+transform = Transform3D(-3.00208e-08, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.07814e-10, 2, 3.67946, 3.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A/TextBox29"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "I guess picking the wrong
+path can be quite a pleasure"
+outline_size = 0
+
+[node name="TextBox31" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
+transform = Transform3D(-2.55549, 0, -3.00916e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 13, 3.67946, -25.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A/TextBox31"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Learning is making mistakes"
+outline_size = 0
+
 [node name="TextBox23" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
 transform = Transform3D(-2.55549, 0, -3.00916e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 21, 3.67946, 38.9896)
 material_override = SubResource("StandardMaterial3D_cfchb")
@@ -1338,9 +1300,9 @@ modulate = Color(0, 0, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
 text = "Why? Lets just say he did
 something no one ever did
-to me. Easy to say he is just
-rotten to the core but it's
-never that easy"
+to him. What did he do? I am
+not sure that I should tell you.
+But it was horrible"
 outline_size = 0
 
 [node name="TextBox19" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
@@ -1353,8 +1315,9 @@ mesh = SubResource("BoxMesh_7h6dt")
 transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
 modulate = Color(0, 0, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
-text = "Because of him I started seeing
-the world in a different light"
+text = "Because of this person he
+started seeing the world
+in a different light"
 outline_size = 0
 
 [node name="TextBox28" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
@@ -1367,23 +1330,7 @@ mesh = SubResource("BoxMesh_7h6dt")
 transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
 modulate = Color(0, 0, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
-text = "\"Patience has its own rewards\"
-Btw if you like this game check
-Antichamber out"
-outline_size = 0
-
-[node name="TextBox20" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
-transform = Transform3D(2.55549, 0, -2.79397e-09, 0, 1.59091, 0, 1.78814e-07, 0, 0.0480733, 53, 3.67946, -23.0104)
-material_override = SubResource("StandardMaterial3D_cfchb")
-cast_shadow = 0
-mesh = SubResource("BoxMesh_7h6dt")
-
-[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A/TextBox20"]
-transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
-modulate = Color(0, 0, 0, 1)
-outline_modulate = Color(0, 0, 0, 0)
-text = "Because of him I started seeing
-the world in a different light"
+text = "Patience can be rewarded"
 outline_size = 0
 
 [node name="TextBox21" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
@@ -1396,8 +1343,8 @@ mesh = SubResource("BoxMesh_7h6dt")
 transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
 modulate = Color(0, 0, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
-text = "It's because of him I started
-to hate everyone"
+text = "It's because of him my friend
+started to hate everyone"
 outline_size = 0
 
 [node name="TextBox14" type="MeshInstance3D" parent="WorldSpace/TextBoxes A"]
@@ -1448,6 +1395,380 @@ cast_shadow = 0
 mesh = SubResource("BoxMesh_7h6dt")
 
 [node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A/TextBox"]
+transform = Transform3D(0.391314, 0, 0, 0, 0.628572, 0, 0, 0, 20.8015, 0, 0.0116402, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Hey there, this litlle
+puzzle is just for you. 
+Basically it's about duality
+ or something like that.
+Now turn to your left"
+outline_size = 0
+
+[node name="TextBoxes A2" type="Node3D" parent="WorldSpace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0, 0)
+
+[node name="TextBox3" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-1.11704e-07, 0, -0.0480734, 0, 1.59091, 0, 2.55549, 0, -2.10135e-09, 88, 3.67946, -36.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox3"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.13687e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Now the point is getting out 
+of here but I'm sure 
+you got that already"
+outline_size = 0
+
+[node name="TextBox4" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.55549, 0, 0, 0, 1.59091, 0, -7.10543e-15, 0, 0.0480734, 93, 3.67946, -39.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox4"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.13687e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Of course there are dead ends
+here but you really should make
+some mistakes. It's the only
+way to learn as a person"
+outline_size = 0
+
+[node name="TextBox5" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-1.11704e-07, 0, 0.0480734, 0, 1.59091, 0, -2.55549, 0, -2.10135e-09, 66, 3.67946, -28.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox5"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Now that we've cleared how
+this place works let's talk
+for a bit. Ok?"
+outline_size = 0
+
+[node name="TextBox7" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(3.35112e-07, 0, -0.0480734, 0, 1.59091, 0, 2.55549, 0, 6.30406e-09, 96, 3.67946, -20.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox7"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Sometimes it seems that there 
+are so many ways to go and
+ none of them is right"
+outline_size = 0
+
+[node name="TextBox8" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -4.20271e-09, 0, 1.59091, 0, 2.23408e-07, 0, -0.0480734, 85, 3.67946, 6.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox8"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "And yet we just pick our wrong
+way and go there anyway"
+outline_size = 0
+
+[node name="TextBox9" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.55549, 0, 8.40541e-09, 0, 1.59091, 0, -4.46816e-07, 0, 0.0480734, 85, 3.67946, 8.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox9"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "And sometimes the thing
+we want is just a hand away "
+outline_size = 0
+
+[node name="TextBox10" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-4.76837e-07, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.31323e-09, 82, 3.67946, 11.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox10"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "And it is still just
+unreachable"
+outline_size = 0
+
+[node name="TextBox11" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.53429e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, 5.11052e-09, 96, 3.67946, 27.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox11"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Hi! I... I really don't know what
+to write here. How about
+\"when it rains - it pours\"?
+Actually I don't know what it
+means but it sounds smart"
+outline_size = 0
+
+[node name="TextBox13" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -3.00917e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 69, 3.67946, 30.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox13"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Go right here"
+outline_size = 0
+
+[node name="TextBox16" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-3.00208e-08, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.07814e-10, 50, 3.67946, 27.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox16"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Let me tell you a story while 
+you are here. I am sorry if it is
+too disturbing or sad. I don't
+want to make your day worse.
+It's a story of a friend of mine"
+outline_size = 0
+
+[node name="TextBox17" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-3.00208e-08, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.07814e-10, 34, 3.67946, 11.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox17"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "You see there's someone that
+he loves more than anyone in
+the world"
+outline_size = 0
+
+[node name="TextBox24" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -3.00916e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 45, 3.67946, 38.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox24"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "It could be that we want things
+we can't get the most"
+outline_size = 0
+
+[node name="TextBox25" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.53429e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, 5.11051e-09, 48, 3.67946, 35.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox25"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "And it can be a big problem
+at least sometimes"
+outline_size = 0
+
+[node name="TextBox26" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -3.00916e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 5, 3.67946, 38.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox26"]
+transform = Transform3D(0.391314, 0, -3.55271e-15, 0, 0.628572, 0, -1.13687e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Since you like wandering so
+much I prepared a little present
+It's just around the corner"
+outline_size = 0
+
+[node name="TextBox22" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-3.00208e-08, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.07814e-10, 18, 3.67946, 3.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox22"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "I think that imagining
+something that never existed
+is a lot like a maze. You wonder
+around searching for one right
+answer"
+outline_size = 0
+
+[node name="TextBox29" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-3.00208e-08, 0, 0.0480733, 0, 1.59091, 0, -2.55549, 0, -9.07814e-10, 2, 3.67946, 3.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox29"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "I guess picking the wrong
+path can be quite a pleasure"
+outline_size = 0
+
+[node name="TextBox23" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -3.00916e-09, 0, 1.59091, 0, 1.41725e-07, 0, -0.0480733, 21, 3.67946, 38.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox23"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "And yet there is no \"right\"
+answer. Only one you will be 
+happy with. Sometimes it's
+easy to find it, though hard to
+undestand that this is the one"
+outline_size = 0
+
+[node name="TextBox18" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-1.93387e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, -3.29489e-09, 64, 3.67946, 3.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox18"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Why? Lets just say she did
+something no one ever did
+to him. She loved him 
+regardless of circumstances"
+outline_size = 0
+
+[node name="TextBox19" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.55549, 0, -2.79397e-09, 0, 1.59091, 0, 1.78814e-07, 0, 0.0480733, 53, 3.67946, -23.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox19"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Because of her he started seeing
+the world in a different light"
+outline_size = 0
+
+[node name="TextBox28" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.55549, 0, -1.40873e-09, 0, 1.59091, 0, 4.4594e-08, 0, -0.0480733, 53, 3.67946, -1.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox28"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Patience can be rewarded"
+outline_size = 0
+
+[node name="TextBox21" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(-2.90518e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, -4.89532e-09, 48, 3.67946, -12.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox21"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "It's because of her he
+stopped hating himself"
+outline_size = 0
+
+[node name="TextBox14" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.53429e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, 5.11052e-09, 96, 3.67946, 35.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox14"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "You don't trust me?"
+outline_size = 0
+
+[node name="TextBox15" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.53429e-07, 0, -0.0480733, 0, 1.59091, 0, 2.55549, 0, 5.11052e-09, 72, 3.67946, 35.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox15"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Wow, you do like exploring"
+outline_size = 0
+
+[node name="TextBox12" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.55549, 0, 8.40541e-09, 0, 1.59091, 0, -4.46816e-07, 0, 0.0480734, 77, 3.67946, 8.9896)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox12"]
+transform = Transform3D(0.391314, 0, -1.77636e-15, 0, 0.628572, 0, -1.7053e-13, 0, 20.8015, 0, 0.0116403, 0.861206)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "I hope this game doesn't hurt
+your eyes, it's my first time
+doing 3d games"
+outline_size = 0
+
+[node name="TextBox" type="MeshInstance3D" parent="WorldSpace/TextBoxes A2"]
+transform = Transform3D(2.55549, 0, 0, 0, 1.59091, 0, 0, 0, 0.0480734, 69, 3.67946, -39.0104)
+material_override = SubResource("StandardMaterial3D_cfchb")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_7h6dt")
+
+[node name="Label3D" type="Label3D" parent="WorldSpace/TextBoxes A2/TextBox"]
 transform = Transform3D(0.391314, 0, 0, 0, 0.628572, 0, 0, 0, 20.8015, 0, 0.0116402, 0.861206)
 modulate = Color(0, 0, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
