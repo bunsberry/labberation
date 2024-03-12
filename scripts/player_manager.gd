@@ -5,7 +5,7 @@ extends Node
 @export var raycasters: Array[RayCast3D]
 @export var cameraPivots: Array[Node3D]
 
-@export var speed = 5.0
+@export var speed = 7.0
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var is_paused = false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq82db6t60sqs"
+path="res://.godot/imported/trophy.obj-79e0e59528e59090e1697262f516bd6d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trophy.obj-79e0e59528e59090e1697262f516bd6d.mesh"]
+
+source_file="res://trophy.obj"
+dest_files=["res://.godot/imported/trophy.obj-79e0e59528e59090e1697262f516bd6d.mesh", "res://.godot/imported/trophy.obj-79e0e59528e59090e1697262f516bd6d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

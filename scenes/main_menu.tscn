@@ -51,13 +51,13 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_q20xb")
-text = "   D 
-   U  
-   A
-   L
-   I
-   T
-   Y"
+text = "D
+U
+A
+L
+I
+T
+Y"
 label_settings = SubResource("LabelSettings_5s82a")
 horizontal_alignment = 1
 vertical_alignment = 2
@@ -98,6 +98,12 @@ layout_mode = 2
 [node name="Spacer2" type="VBoxContainer" parent="HBoxContainer"]
 custom_minimum_size = Vector2(24, 0)
 layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
 
 [node name="global_toggles" type="Node" parent="."]
 script = ExtResource("2_a1c0e")
